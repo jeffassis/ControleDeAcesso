@@ -1,0 +1,10 @@
+C:\Users\cmdtj\OneDrive\Área de Trabalho\Apps\ControleDeAcesso\ControleDeAcesso\bin\Debug\ControleDeAcesso.exe.config
+C:\Users\cmdtj\OneDrive\Área de Trabalho\Apps\ControleDeAcesso\ControleDeAcesso\bin\Debug\ControleDeAcesso.exe
+C:\Users\cmdtj\OneDrive\Área de Trabalho\Apps\ControleDeAcesso\ControleDeAcesso\bin\Debug\ControleDeAcesso.pdb
+C:\Users\cmdtj\OneDrive\Área de Trabalho\Apps\ControleDeAcesso\ControleDeAcesso\obj\Debug\ControleDeAcesso.csproj.AssemblyReference.cache
+C:\Users\cmdtj\OneDrive\Área de Trabalho\Apps\ControleDeAcesso\ControleDeAcesso\obj\Debug\ControleDeAcesso.Form1.resources
+C:\Users\cmdtj\OneDrive\Área de Trabalho\Apps\ControleDeAcesso\ControleDeAcesso\obj\Debug\ControleDeAcesso.Properties.Resources.resources
+C:\Users\cmdtj\OneDrive\Área de Trabalho\Apps\ControleDeAcesso\ControleDeAcesso\obj\Debug\ControleDeAcesso.csproj.GenerateResource.cache
+C:\Users\cmdtj\OneDrive\Área de Trabalho\Apps\ControleDeAcesso\ControleDeAcesso\obj\Debug\ControleDeAcesso.csproj.CoreCompileInputs.cache
+C:\Users\cmdtj\OneDrive\Área de Trabalho\Apps\ControleDeAcesso\ControleDeAcesso\obj\Debug\ControleDeAcesso.exe
+C:\Users\cmdtj\OneDrive\Área de Trabalho\Apps\ControleDeAcesso\ControleDeAcesso\obj\Debug\ControleDeAcesso.pdb
