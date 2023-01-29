@@ -30,166 +30,177 @@ namespace ControleDeAcesso
         private void InitializeComponent()
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.cadastroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.faturamentoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.acessoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.clientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.vendedoresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.fornecedoresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.emitirNotaFiscalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cancelarNotaFiscalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.consultarNotaFiscalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.consultarFaturamentoDoMêsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.comissãoDeVendedoresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cadastroDeUsuárioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.controleDeAcessoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.inativarEAtivarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.acessoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuCadastro = new System.Windows.Forms.ToolStripMenuItem();
+            this.CadastroClientes = new System.Windows.Forms.ToolStripMenuItem();
+            this.CadastroVendedores = new System.Windows.Forms.ToolStripMenuItem();
+            this.CadastroFornecedores = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuFaturamento = new System.Windows.Forms.ToolStripMenuItem();
+            this.FaturamentoEmitirNota = new System.Windows.Forms.ToolStripMenuItem();
+            this.FaturamentoCancelarNota = new System.Windows.Forms.ToolStripMenuItem();
+            this.FaturamentoConsultarNota = new System.Windows.Forms.ToolStripMenuItem();
+            this.FaturamentoConsultaDoMes = new System.Windows.Forms.ToolStripMenuItem();
+            this.FaturamentoComissaoVendedor = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuAcesso = new System.Windows.Forms.ToolStripMenuItem();
+            this.AcessoCadastroUsuario = new System.Windows.Forms.ToolStripMenuItem();
+            this.AcessoControleAcesso = new System.Windows.Forms.ToolStripMenuItem();
+            this.ControleAcessoInativarAtivar = new System.Windows.Forms.ToolStripMenuItem();
+            this.ControleAcessoAcesso = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuSair = new System.Windows.Forms.ToolStripMenuItem();
             this.button1 = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.cadastroToolStripMenuItem,
-            this.faturamentoToolStripMenuItem,
-            this.acessoToolStripMenuItem,
-            this.sairToolStripMenuItem});
+            this.menuCadastro,
+            this.menuFaturamento,
+            this.menuAcesso,
+            this.menuSair});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(882, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
-            // cadastroToolStripMenuItem
+            // menuCadastro
             // 
-            this.cadastroToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.clientesToolStripMenuItem,
-            this.vendedoresToolStripMenuItem,
-            this.fornecedoresToolStripMenuItem});
-            this.cadastroToolStripMenuItem.Name = "cadastroToolStripMenuItem";
-            this.cadastroToolStripMenuItem.Size = new System.Drawing.Size(69, 20);
-            this.cadastroToolStripMenuItem.Text = "Cadastro ";
+            this.menuCadastro.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.CadastroClientes,
+            this.CadastroVendedores,
+            this.CadastroFornecedores});
+            this.menuCadastro.Name = "menuCadastro";
+            this.menuCadastro.Size = new System.Drawing.Size(69, 20);
+            this.menuCadastro.Text = "Cadastro ";
             // 
-            // faturamentoToolStripMenuItem
+            // CadastroClientes
             // 
-            this.faturamentoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.emitirNotaFiscalToolStripMenuItem,
-            this.cancelarNotaFiscalToolStripMenuItem,
-            this.consultarNotaFiscalToolStripMenuItem,
-            this.consultarFaturamentoDoMêsToolStripMenuItem,
-            this.comissãoDeVendedoresToolStripMenuItem});
-            this.faturamentoToolStripMenuItem.Name = "faturamentoToolStripMenuItem";
-            this.faturamentoToolStripMenuItem.Size = new System.Drawing.Size(87, 20);
-            this.faturamentoToolStripMenuItem.Text = "Faturamento";
+            this.CadastroClientes.Name = "CadastroClientes";
+            this.CadastroClientes.Size = new System.Drawing.Size(180, 22);
+            this.CadastroClientes.Text = "Clientes";
             // 
-            // acessoToolStripMenuItem
+            // CadastroVendedores
             // 
-            this.acessoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.cadastroDeUsuárioToolStripMenuItem,
-            this.controleDeAcessoToolStripMenuItem});
-            this.acessoToolStripMenuItem.Name = "acessoToolStripMenuItem";
-            this.acessoToolStripMenuItem.Size = new System.Drawing.Size(56, 20);
-            this.acessoToolStripMenuItem.Text = "Acesso";
+            this.CadastroVendedores.Name = "CadastroVendedores";
+            this.CadastroVendedores.Size = new System.Drawing.Size(180, 22);
+            this.CadastroVendedores.Text = "Vendedores";
             // 
-            // sairToolStripMenuItem
+            // CadastroFornecedores
             // 
-            this.sairToolStripMenuItem.Name = "sairToolStripMenuItem";
-            this.sairToolStripMenuItem.Size = new System.Drawing.Size(38, 20);
-            this.sairToolStripMenuItem.Text = "Sair";
+            this.CadastroFornecedores.Name = "CadastroFornecedores";
+            this.CadastroFornecedores.Size = new System.Drawing.Size(180, 22);
+            this.CadastroFornecedores.Text = "Fornecedores";
             // 
-            // clientesToolStripMenuItem
+            // menuFaturamento
             // 
-            this.clientesToolStripMenuItem.Name = "clientesToolStripMenuItem";
-            this.clientesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.clientesToolStripMenuItem.Text = "Clientes";
+            this.menuFaturamento.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.FaturamentoEmitirNota,
+            this.FaturamentoCancelarNota,
+            this.FaturamentoConsultarNota,
+            this.FaturamentoConsultaDoMes,
+            this.FaturamentoComissaoVendedor});
+            this.menuFaturamento.Name = "menuFaturamento";
+            this.menuFaturamento.Size = new System.Drawing.Size(87, 20);
+            this.menuFaturamento.Text = "Faturamento";
             // 
-            // vendedoresToolStripMenuItem
+            // FaturamentoEmitirNota
             // 
-            this.vendedoresToolStripMenuItem.Name = "vendedoresToolStripMenuItem";
-            this.vendedoresToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.vendedoresToolStripMenuItem.Text = "Vendedores";
+            this.FaturamentoEmitirNota.Name = "FaturamentoEmitirNota";
+            this.FaturamentoEmitirNota.Size = new System.Drawing.Size(238, 22);
+            this.FaturamentoEmitirNota.Text = "Emitir Nota Fiscal";
             // 
-            // fornecedoresToolStripMenuItem
+            // FaturamentoCancelarNota
             // 
-            this.fornecedoresToolStripMenuItem.Name = "fornecedoresToolStripMenuItem";
-            this.fornecedoresToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.fornecedoresToolStripMenuItem.Text = "Fornecedores";
+            this.FaturamentoCancelarNota.Name = "FaturamentoCancelarNota";
+            this.FaturamentoCancelarNota.Size = new System.Drawing.Size(238, 22);
+            this.FaturamentoCancelarNota.Text = "Cancelar Nota Fiscal";
             // 
-            // emitirNotaFiscalToolStripMenuItem
+            // FaturamentoConsultarNota
             // 
-            this.emitirNotaFiscalToolStripMenuItem.Name = "emitirNotaFiscalToolStripMenuItem";
-            this.emitirNotaFiscalToolStripMenuItem.Size = new System.Drawing.Size(238, 22);
-            this.emitirNotaFiscalToolStripMenuItem.Text = "Emitir Nota Fiscal";
+            this.FaturamentoConsultarNota.Name = "FaturamentoConsultarNota";
+            this.FaturamentoConsultarNota.Size = new System.Drawing.Size(238, 22);
+            this.FaturamentoConsultarNota.Text = "Consultar Nota Fiscal";
             // 
-            // cancelarNotaFiscalToolStripMenuItem
+            // FaturamentoConsultaDoMes
             // 
-            this.cancelarNotaFiscalToolStripMenuItem.Name = "cancelarNotaFiscalToolStripMenuItem";
-            this.cancelarNotaFiscalToolStripMenuItem.Size = new System.Drawing.Size(238, 22);
-            this.cancelarNotaFiscalToolStripMenuItem.Text = "Cancelar Nota Fiscal";
+            this.FaturamentoConsultaDoMes.Name = "FaturamentoConsultaDoMes";
+            this.FaturamentoConsultaDoMes.Size = new System.Drawing.Size(238, 22);
+            this.FaturamentoConsultaDoMes.Text = "Consultar Faturamento do Mês";
             // 
-            // consultarNotaFiscalToolStripMenuItem
+            // FaturamentoComissaoVendedor
             // 
-            this.consultarNotaFiscalToolStripMenuItem.Name = "consultarNotaFiscalToolStripMenuItem";
-            this.consultarNotaFiscalToolStripMenuItem.Size = new System.Drawing.Size(238, 22);
-            this.consultarNotaFiscalToolStripMenuItem.Text = "Consultar Nota Fiscal";
+            this.FaturamentoComissaoVendedor.Name = "FaturamentoComissaoVendedor";
+            this.FaturamentoComissaoVendedor.Size = new System.Drawing.Size(238, 22);
+            this.FaturamentoComissaoVendedor.Text = "Comissão de Vendedores";
             // 
-            // consultarFaturamentoDoMêsToolStripMenuItem
+            // menuAcesso
             // 
-            this.consultarFaturamentoDoMêsToolStripMenuItem.Name = "consultarFaturamentoDoMêsToolStripMenuItem";
-            this.consultarFaturamentoDoMêsToolStripMenuItem.Size = new System.Drawing.Size(238, 22);
-            this.consultarFaturamentoDoMêsToolStripMenuItem.Text = "Consultar Faturamento do Mês";
+            this.menuAcesso.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.AcessoCadastroUsuario,
+            this.AcessoControleAcesso});
+            this.menuAcesso.Name = "menuAcesso";
+            this.menuAcesso.Size = new System.Drawing.Size(56, 20);
+            this.menuAcesso.Text = "Acesso";
             // 
-            // comissãoDeVendedoresToolStripMenuItem
+            // AcessoCadastroUsuario
             // 
-            this.comissãoDeVendedoresToolStripMenuItem.Name = "comissãoDeVendedoresToolStripMenuItem";
-            this.comissãoDeVendedoresToolStripMenuItem.Size = new System.Drawing.Size(238, 22);
-            this.comissãoDeVendedoresToolStripMenuItem.Text = "Comissão de Vendedores";
+            this.AcessoCadastroUsuario.Name = "AcessoCadastroUsuario";
+            this.AcessoCadastroUsuario.Size = new System.Drawing.Size(180, 22);
+            this.AcessoCadastroUsuario.Text = "Cadastro de Usuário";
             // 
-            // cadastroDeUsuárioToolStripMenuItem
+            // AcessoControleAcesso
             // 
-            this.cadastroDeUsuárioToolStripMenuItem.Name = "cadastroDeUsuárioToolStripMenuItem";
-            this.cadastroDeUsuárioToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.cadastroDeUsuárioToolStripMenuItem.Text = "Cadastro de Usuário";
+            this.AcessoControleAcesso.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ControleAcessoInativarAtivar,
+            this.ControleAcessoAcesso});
+            this.AcessoControleAcesso.Name = "AcessoControleAcesso";
+            this.AcessoControleAcesso.Size = new System.Drawing.Size(180, 22);
+            this.AcessoControleAcesso.Text = "Controle de Acesso";
             // 
-            // controleDeAcessoToolStripMenuItem
+            // ControleAcessoInativarAtivar
             // 
-            this.controleDeAcessoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.inativarEAtivarToolStripMenuItem,
-            this.acessoToolStripMenuItem1});
-            this.controleDeAcessoToolStripMenuItem.Name = "controleDeAcessoToolStripMenuItem";
-            this.controleDeAcessoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.controleDeAcessoToolStripMenuItem.Text = "Controle de Acesso";
+            this.ControleAcessoInativarAtivar.Name = "ControleAcessoInativarAtivar";
+            this.ControleAcessoInativarAtivar.Size = new System.Drawing.Size(156, 22);
+            this.ControleAcessoInativarAtivar.Text = "Inativar e Ativar";
             // 
-            // inativarEAtivarToolStripMenuItem
+            // ControleAcessoAcesso
             // 
-            this.inativarEAtivarToolStripMenuItem.Name = "inativarEAtivarToolStripMenuItem";
-            this.inativarEAtivarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.inativarEAtivarToolStripMenuItem.Text = "Inativar e Ativar";
+            this.ControleAcessoAcesso.Name = "ControleAcessoAcesso";
+            this.ControleAcessoAcesso.Size = new System.Drawing.Size(156, 22);
+            this.ControleAcessoAcesso.Text = "Acesso";
             // 
-            // acessoToolStripMenuItem1
+            // menuSair
             // 
-            this.acessoToolStripMenuItem1.Name = "acessoToolStripMenuItem1";
-            this.acessoToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
-            this.acessoToolStripMenuItem1.Text = "Acesso";
+            this.menuSair.Name = "menuSair";
+            this.menuSair.Size = new System.Drawing.Size(38, 20);
+            this.menuSair.Text = "Sair";
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(227, 256);
+            this.button1.Location = new System.Drawing.Point(310, 373);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(160, 93);
+            this.button1.Size = new System.Drawing.Size(160, 50);
             this.button1.TabIndex = 1;
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(12, 57);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(855, 298);
+            this.dataGridView1.TabIndex = 2;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(882, 450);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
@@ -197,6 +208,7 @@ namespace ControleDeAcesso
             this.Text = "Form1";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -205,23 +217,24 @@ namespace ControleDeAcesso
         #endregion
 
         private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem cadastroToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem faturamentoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem acessoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem sairToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem clientesToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem vendedoresToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem fornecedoresToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem emitirNotaFiscalToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem cancelarNotaFiscalToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem consultarNotaFiscalToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem consultarFaturamentoDoMêsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem comissãoDeVendedoresToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem cadastroDeUsuárioToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem controleDeAcessoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem inativarEAtivarToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem acessoToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem menuCadastro;
+        private System.Windows.Forms.ToolStripMenuItem menuFaturamento;
+        private System.Windows.Forms.ToolStripMenuItem menuAcesso;
+        private System.Windows.Forms.ToolStripMenuItem menuSair;
+        private System.Windows.Forms.ToolStripMenuItem CadastroClientes;
+        private System.Windows.Forms.ToolStripMenuItem CadastroVendedores;
+        private System.Windows.Forms.ToolStripMenuItem CadastroFornecedores;
+        private System.Windows.Forms.ToolStripMenuItem FaturamentoEmitirNota;
+        private System.Windows.Forms.ToolStripMenuItem FaturamentoCancelarNota;
+        private System.Windows.Forms.ToolStripMenuItem FaturamentoConsultarNota;
+        private System.Windows.Forms.ToolStripMenuItem FaturamentoConsultaDoMes;
+        private System.Windows.Forms.ToolStripMenuItem FaturamentoComissaoVendedor;
+        private System.Windows.Forms.ToolStripMenuItem AcessoCadastroUsuario;
+        private System.Windows.Forms.ToolStripMenuItem AcessoControleAcesso;
+        private System.Windows.Forms.ToolStripMenuItem ControleAcessoInativarAtivar;
+        private System.Windows.Forms.ToolStripMenuItem ControleAcessoAcesso;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }
 
