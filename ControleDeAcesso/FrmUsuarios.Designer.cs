@@ -76,6 +76,7 @@ namespace ControleDeAcesso
             this.BtnAdicionar.Size = new System.Drawing.Size(78, 22);
             this.BtnAdicionar.Text = "&Adicionar";
             this.BtnAdicionar.ToolTipText = "Adicionar dados";
+            this.BtnAdicionar.Click += new System.EventHandler(this.BtnAdicionar_Click);
             // 
             // toolStripSeparator
             // 
@@ -105,6 +106,7 @@ namespace ControleDeAcesso
             this.BtnDelete.Size = new System.Drawing.Size(74, 22);
             this.BtnDelete.Text = "&Remover";
             this.BtnDelete.ToolTipText = "Remover dados";
+            this.BtnDelete.Click += new System.EventHandler(this.BtnDelete_Click);
             // 
             // toolStripSeparator2
             // 
@@ -118,6 +120,7 @@ namespace ControleDeAcesso
             this.BtnPesquisar.Name = "BtnPesquisar";
             this.BtnPesquisar.Size = new System.Drawing.Size(78, 22);
             this.BtnPesquisar.Text = "&Consultar";
+            this.BtnPesquisar.Click += new System.EventHandler(this.BtnPesquisar_Click);
             // 
             // FrmUsuarios
             // 

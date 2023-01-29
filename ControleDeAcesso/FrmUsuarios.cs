@@ -51,14 +51,9 @@ namespace ControleDeAcesso
         {
             if (dataGridView1.Rows.Count > 0)
             {
-                // tranfereindo os dados do DGV para objeto usuario
-                usuario.Id = Convert.ToInt32(dataGridView1.Rows[dataGridView1.CurrentCell.RowIndex].Cells["id_usuario"].Value);
-                usuario.Email = dataGridView1.Rows[dataGridView1.CurrentCell.RowIndex].Cells["email"].Value.ToString();
-                usuario.Nome = dataGridView1.Rows[dataGridView1.CurrentCell.RowIndex].Cells["nome"].Value.ToString();
-                usuario.NomeCurto = dataGridView1.Rows[dataGridView1.CurrentCell.RowIndex].Cells["nome_curto"].Value.ToString();
-                usuario.Ativo = Convert.ToChar(dataGridView1.Rows[dataGridView1.CurrentCell.RowIndex].Cells["ativo"].Value);
-
-                using (var form = new FrmUsuarioCadastro(usuario))
+                TransferirGradeParaUsuario();
+                
+                using (var form = new FrmUsuarioCadastro(usuario, Operacao.Editar))
                 {
                     form.ShowDialog();
 
@@ -69,6 +64,74 @@ namespace ControleDeAcesso
                         dataGridView1.Rows[dataGridView1.CurrentCell.RowIndex].Cells["nome"].Value = usuario.Nome;
                         dataGridView1.Rows[dataGridView1.CurrentCell.RowIndex].Cells["nome_curto"].Value = usuario.NomeCurto;
                         dataGridView1.Rows[dataGridView1.CurrentCell.RowIndex].Cells["ativo"].Value = usuario.Ativo;
+                    }
+                }
+            }
+        }
+
+        private void BtnAdicionar_Click(object sender, EventArgs e)
+        {
+            ReiniciarUsuario(usuario);
+
+            using (var form = new FrmUsuarioCadastro(usuario, Operacao.Adicionar))
+            {
+                form.ShowDialog();
+
+                dataGridView1.DataSource = Usuarios.BuscarTodos();
+            }
+        }
+
+        private void ReiniciarUsuario(Usuarios usuario)
+        {
+            usuario.Id = 0;
+            usuario.Email = "";
+            usuario.Nome = "";
+            usuario.NomeCurto = "";
+            usuario.Ativo = 'S';
+        }
+
+        private void BtnDelete_Click(object sender, EventArgs e)
+        {
+            if (dataGridView1.Rows.Count > 0)
+            {
+                TransferirGradeParaUsuario();
+
+                using (var form = new FrmUsuarioCadastro(usuario, Operacao.Remover))
+                {
+                    form.ShowDialog();
+
+                    if (usuario.Id != -1)
+                    {
+                        dataGridView1.DataSource = Usuarios.BuscarTodos();
+                    }
+                }
+            }
+        }
+
+        private void TransferirGradeParaUsuario()
+        {
+            // tranfereindo os dados do DGV para objeto usuario
+            usuario.Id = Convert.ToInt32(dataGridView1.Rows[dataGridView1.CurrentCell.RowIndex].Cells["id_usuario"].Value);
+            usuario.Email = dataGridView1.Rows[dataGridView1.CurrentCell.RowIndex].Cells["email"].Value.ToString();
+            usuario.Nome = dataGridView1.Rows[dataGridView1.CurrentCell.RowIndex].Cells["nome"].Value.ToString();
+            usuario.NomeCurto = dataGridView1.Rows[dataGridView1.CurrentCell.RowIndex].Cells["nome_curto"].Value.ToString();
+            usuario.Ativo = Convert.ToChar(dataGridView1.Rows[dataGridView1.CurrentCell.RowIndex].Cells["ativo"].Value);
+
+        }
+
+        private void BtnPesquisar_Click(object sender, EventArgs e)
+        {
+            if (dataGridView1.Rows.Count > 0)
+            {
+                TransferirGradeParaUsuario();
+
+                using (var form = new FrmUsuarioCadastro(usuario, Operacao.Consultar))
+                {
+                    form.ShowDialog();
+
+                    if (usuario.Id != -1)
+                    {
+                        dataGridView1.DataSource = Usuarios.BuscarTodos();
                     }
                 }
             }

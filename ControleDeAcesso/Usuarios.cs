@@ -28,6 +28,70 @@ namespace ControleDeAcesso
             Ativo = ativo;
         }
 
+        public string Salvar(Usuarios usuario)
+        {
+            var sql = "";
+
+            if (usuario.Id == 0)
+            {
+                sql = "INSERT INTO tb_usuario (email, nome, nome_curto, ativo) VALUES (@email, @nome, @nome_curto, @ativo)";
+            }
+            else
+            {
+                sql = "UPDATE tb_usuario SET email=@email, nome=@nome, nome_curto=@nome_curto, ativo=@ativo WHERE id_usuario=@id";
+            }
+
+            try
+            {
+                using (var cn = new MySqlConnection(Program.strConn))
+                {
+                    cn.Open();
+                    using (var cmd = new MySqlCommand(sql, cn))
+                    {
+                        if (usuario.Id > 0)
+                        {
+                            cmd.Parameters.AddWithValue("@id", usuario.Id);
+                        }
+                        cmd.Parameters.AddWithValue("email", usuario.Email);
+                        cmd.Parameters.AddWithValue("nome", usuario.Nome);
+                        cmd.Parameters.AddWithValue("nome_curto", usuario.NomeCurto);
+                        cmd.Parameters.AddWithValue("ativo", usuario.Ativo);
+
+                        cmd.ExecuteNonQuery();
+                    }
+                }
+                return "ok";
+            }
+            catch (Exception ex)
+            {                
+                return ex.Message;
+            }
+
+        }
+
+        public bool Excluir(int id)
+        {
+            var sql = "DELETE FROM tb_usuario WHERE id_usuario=@id";
+
+            try
+            {
+                using (var cn = new MySqlConnection(Program.strConn))
+                {
+                    cn.Open();
+                    using (var cmd = new MySqlCommand(sql, cn))
+                    {
+                        cmd.Parameters.AddWithValue("@id", id);
+                        cmd.ExecuteNonQuery();
+                    }
+                }
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+        }
+
         public static DataTable BuscarTodos()
         {
             var sql = "SELECT id_usuario, email, nome, nome_curto, ativo FROM tb_usuario";

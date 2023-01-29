@@ -40,6 +40,7 @@ namespace ControleDeAcesso
             this.CbAtivo = new System.Windows.Forms.ComboBox();
             this.lblId = new System.Windows.Forms.Label();
             this.BtnSalvar = new System.Windows.Forms.Button();
+            this.BtnOk = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -94,6 +95,7 @@ namespace ControleDeAcesso
             // 
             // txtEmail
             // 
+            this.txtEmail.CharacterCasing = System.Windows.Forms.CharacterCasing.Lower;
             this.txtEmail.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmail.Location = new System.Drawing.Point(148, 71);
             this.txtEmail.MaxLength = 100;
@@ -151,12 +153,26 @@ namespace ControleDeAcesso
             this.BtnSalvar.TabIndex = 10;
             this.BtnSalvar.Text = "Salvar";
             this.BtnSalvar.UseVisualStyleBackColor = true;
+            this.BtnSalvar.Click += new System.EventHandler(this.BtnSalvar_Click);
+            // 
+            // BtnOk
+            // 
+            this.BtnOk.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnOk.Location = new System.Drawing.Point(203, 250);
+            this.BtnOk.Name = "BtnOk";
+            this.BtnOk.Size = new System.Drawing.Size(97, 41);
+            this.BtnOk.TabIndex = 11;
+            this.BtnOk.Text = "------";
+            this.BtnOk.UseVisualStyleBackColor = true;
+            this.BtnOk.Visible = false;
+            this.BtnOk.Click += new System.EventHandler(this.BtnOk_Click);
             // 
             // FrmUsuarioCadastro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(511, 317);
+            this.Controls.Add(this.BtnOk);
             this.Controls.Add(this.BtnSalvar);
             this.Controls.Add(this.lblId);
             this.Controls.Add(this.CbAtivo);
@@ -173,6 +189,7 @@ namespace ControleDeAcesso
             this.Name = "FrmUsuarioCadastro";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cadastro de Usuários";
+            this.Load += new System.EventHandler(this.FrmUsuarioCadastro_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -191,5 +208,6 @@ namespace ControleDeAcesso
         private System.Windows.Forms.ComboBox CbAtivo;
         private System.Windows.Forms.Label lblId;
         private System.Windows.Forms.Button BtnSalvar;
+        private System.Windows.Forms.Button BtnOk;
     }
 }
