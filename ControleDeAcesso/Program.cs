@@ -8,6 +8,9 @@ namespace ControleDeAcesso
 {
     static class Program
     {
+
+        public const string strConn = "SERVER=localhost; DATABASE=project_acesso; UID=root; PWD=; PORT=;";
+
         /// <summary>
         /// Ponto de entrada principal para o aplicativo.
         /// </summary>

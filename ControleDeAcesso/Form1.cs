@@ -25,7 +25,8 @@ namespace ControleDeAcesso
 
             ConfigurarGrade();
 
-            Opcoes.SalvarMenu(opcoes);
+            // Salvar menus no banco de dados
+            //Opcoes.SalvarMenu(opcoes);
         }
 
         private void ConfigurarGrade()
@@ -56,6 +57,14 @@ namespace ControleDeAcesso
             acesso.HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
             acesso.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
             dataGridView1.Columns.Add(acesso);
+        }
+
+        private void AcessoCadastroUsuario_Click(object sender, EventArgs e)
+        {
+            using (var form = new FrmUsuarios())
+            {
+                form.ShowDialog();
+            }
         }
     }
 }

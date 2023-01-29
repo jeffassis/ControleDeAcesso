@@ -10,7 +10,7 @@ namespace ControleDeAcesso
 {
     public class Opcoes
     {
-        private const string strConn = "SERVER=localhost; DATABASE=project_acesso; UID=root; PWD=; PORT=;";
+        
 
         public int Id { get; set; }
         public string Nome { get; set; }
@@ -69,7 +69,7 @@ namespace ControleDeAcesso
 
             try
             {
-                using (var cn = new MySqlConnection(strConn))
+                using (var cn = new MySqlConnection(Program.strConn))
                 {
                     cn.Open();
                     using (var cmd = new MySqlCommand(sql, cn))

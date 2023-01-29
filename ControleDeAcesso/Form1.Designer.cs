@@ -78,19 +78,19 @@ namespace ControleDeAcesso
             // CadastroClientes
             // 
             this.CadastroClientes.Name = "CadastroClientes";
-            this.CadastroClientes.Size = new System.Drawing.Size(180, 22);
+            this.CadastroClientes.Size = new System.Drawing.Size(145, 22);
             this.CadastroClientes.Text = "Clientes";
             // 
             // CadastroVendedores
             // 
             this.CadastroVendedores.Name = "CadastroVendedores";
-            this.CadastroVendedores.Size = new System.Drawing.Size(180, 22);
+            this.CadastroVendedores.Size = new System.Drawing.Size(145, 22);
             this.CadastroVendedores.Text = "Vendedores";
             // 
             // CadastroFornecedores
             // 
             this.CadastroFornecedores.Name = "CadastroFornecedores";
-            this.CadastroFornecedores.Size = new System.Drawing.Size(180, 22);
+            this.CadastroFornecedores.Size = new System.Drawing.Size(145, 22);
             this.CadastroFornecedores.Text = "Fornecedores";
             // 
             // menuFaturamento
@@ -149,6 +149,7 @@ namespace ControleDeAcesso
             this.AcessoCadastroUsuario.Name = "AcessoCadastroUsuario";
             this.AcessoCadastroUsuario.Size = new System.Drawing.Size(180, 22);
             this.AcessoCadastroUsuario.Text = "Cadastro de Usuário";
+            this.AcessoCadastroUsuario.Click += new System.EventHandler(this.AcessoCadastroUsuario_Click);
             // 
             // AcessoControleAcesso
             // 

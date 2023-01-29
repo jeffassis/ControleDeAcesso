@@ -31,3 +31,5 @@ C:\Users\cmdtj\OneDrive\Área de Trabalho\Apps\ControleDeAcesso\ControleDeAcesso
 C:\Users\cmdtj\OneDrive\Área de Trabalho\Apps\ControleDeAcesso\ControleDeAcesso\bin\Debug\System.Numerics.Vectors.xml
 C:\Users\cmdtj\OneDrive\Área de Trabalho\Apps\ControleDeAcesso\ControleDeAcesso\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\cmdtj\OneDrive\Área de Trabalho\Apps\ControleDeAcesso\ControleDeAcesso\obj\Debug\ControleDeAcesso.csproj.CopyComplete
+C:\Users\cmdtj\OneDrive\Área de Trabalho\Apps\ControleDeAcesso\ControleDeAcesso\obj\Debug\ControleDeAcesso.FrmUsuarios.resources
+C:\Users\cmdtj\OneDrive\Área de Trabalho\Apps\ControleDeAcesso\ControleDeAcesso\obj\Debug\ControleDeAcesso.FrmUsuarioCadastro.resources
