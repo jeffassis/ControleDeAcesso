@@ -83,6 +83,16 @@ namespace ControleDeAcesso.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap btn_salvar {
+            get {
+                object obj = ResourceManager.GetObject("btn_salvar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap btn_source {
             get {
                 object obj = ResourceManager.GetObject("btn_source", resourceCulture);

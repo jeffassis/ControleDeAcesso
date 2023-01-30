@@ -13,12 +13,27 @@ namespace ControleDeAcesso
     public partial class FrmUsuarios : Form
     {
         Usuarios usuario = new Usuarios();
-        public FrmUsuarios()
+        public FrmUsuarios(string opcao="")
         {
             InitializeComponent();
             dataGridView1.DataSource = Usuarios.BuscarTodos();
 
             ConfigurarGrade();
+
+            if (opcao.ToLower() == "selecionar")
+            {
+                BtnAdicionar.Visible = false;
+                BtnUpdate.Visible = false;
+                BtnDelete.Visible = false;
+                BtnPesquisar.Visible = false;
+
+                BtnSelecionar.Visible = true;
+
+                toolStripSeparator.Visible = false;
+                toolStripSeparator1.Visible = false;
+                toolStripSeparator2.Visible = false;
+                toolStripSeparator3.Visible = false;
+            }
         }
 
         private void ConfigurarGrade()
@@ -134,6 +149,16 @@ namespace ControleDeAcesso
                         dataGridView1.DataSource = Usuarios.BuscarTodos();
                     }
                 }
+            }
+        }
+
+        private void BtnSelecionar_Click(object sender, EventArgs e)
+        {
+            TransferirGradeParaUsuario();
+
+            using (var form = new FrmUsuarioAcesso(usuario))
+            {
+                form.ShowDialog();
             }
         }
     }

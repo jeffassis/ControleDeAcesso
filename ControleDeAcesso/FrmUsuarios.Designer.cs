@@ -38,6 +38,8 @@ namespace ControleDeAcesso
             this.BtnDelete = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.BtnPesquisar = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
+            this.BtnSelecionar = new System.Windows.Forms.ToolStripButton();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -61,7 +63,9 @@ namespace ControleDeAcesso
             this.toolStripSeparator1,
             this.BtnDelete,
             this.toolStripSeparator2,
-            this.BtnPesquisar});
+            this.BtnPesquisar,
+            this.toolStripSeparator3,
+            this.BtnSelecionar});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(935, 25);
@@ -122,6 +126,21 @@ namespace ControleDeAcesso
             this.BtnPesquisar.Text = "&Consultar";
             this.BtnPesquisar.Click += new System.EventHandler(this.BtnPesquisar_Click);
             // 
+            // toolStripSeparator3
+            // 
+            this.toolStripSeparator3.Name = "toolStripSeparator3";
+            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 25);
+            // 
+            // BtnSelecionar
+            // 
+            this.BtnSelecionar.Image = global::ControleDeAcesso.Properties.Resources.btn_source;
+            this.BtnSelecionar.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.BtnSelecionar.Name = "BtnSelecionar";
+            this.BtnSelecionar.Size = new System.Drawing.Size(81, 22);
+            this.BtnSelecionar.Text = "Selecionar";
+            this.BtnSelecionar.Visible = false;
+            this.BtnSelecionar.Click += new System.EventHandler(this.BtnSelecionar_Click);
+            // 
             // FrmUsuarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -151,5 +170,7 @@ namespace ControleDeAcesso
         private System.Windows.Forms.ToolStripButton BtnDelete;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
         private System.Windows.Forms.ToolStripButton BtnPesquisar;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
+        private System.Windows.Forms.ToolStripButton BtnSelecionar;
     }
 }
